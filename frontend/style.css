@@ -1,0 +1,48 @@
+body {
+  background: linear-gradient(120deg, #020617, #0f172a);
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.card {
+  width: 350px;
+  margin: 80px auto;
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+#progress {
+  background: #334155;
+  height: 8px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#bar {
+  height: 100%;
+  width: 0%;
+  background: #38bdf8;
+  border-radius: 10px;
+  transition: width 0.4s;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  background: #38bdf8;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}

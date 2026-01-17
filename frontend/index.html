@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Career Counselling</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- WELCOME CARD -->
+  <div class="card" id="welcome-card">
+    <h2>🎓 Career Counselling</h2>
+    <p>Helping Class 10 students choose the right stream</p>
+    <button onclick="showSection('form-card')">Start</button>
+  </div>
+
+  <!-- FORM CARD -->
+  <div class="card" id="form-card" style="display:none;">
+    <h3>Enter Your Marks</h3>
+
+    <input type="number" id="math" placeholder="Math Marks (0–100)">
+    <input type="number" id="english" placeholder="English Marks (0–100)">
+    <input type="number" id="science" placeholder="Science Marks (0–100)">
+    <input type="number" id="failures" placeholder="Failed Subjects (if any)">
+
+    <button onclick="submitData()">Get Recommendation</button>
+  </div>
+
+  <!-- RESULT CARD -->
+  <div class="card" id="result-card" style="display:none;">
+    <h3 id="stream"></h3>
+    <p id="reason"></p>
+    <button onclick="showSection('welcome-card')">Start Again</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
